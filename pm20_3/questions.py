@@ -7,42 +7,42 @@ import os
 def theory(qn=0):
     if not qn:
         with path(
-                'q',
+                'pm20_3.q',
                 'task_1.png'
         ) as pt:
             img = Image(filename=pt)
             display(img)
 
         with path(
-                'q',
+                'pm20_3.q',
                 'task_2.png'
         ) as pt:
             img = Image(filename=pt)
             display(img)
 
         with path(
-                'q',
+                'pm20_3.q',
                 'task_3.png'
         ) as pt:
             img = Image(filename=pt)
             display(img)
 
         with path(
-                'q',
+                'pm20_3.q',
                 'task_4.png'
         ) as pt:
             img = Image(filename=pt)
             display(img)
 
         with path(
-                'q',
+                'pm20_3.q',
                 'task_5.png'
         ) as pt:
             img = Image(filename=pt)
             display(img)
 
         with path(
-                'q',
+                'pm20_3.q',
                 'task_6.png'
         ) as pt:
             img = Image(filename=pt)
@@ -50,7 +50,7 @@ def theory(qn=0):
 
     else:
         qn = str(qn)
-        files = sorted(contents('q'))
+        files = sorted(contents('pm20_3.q'))
         to_disp = []
         for elem in files:
             if qn + '_' in elem:
@@ -60,7 +60,7 @@ def theory(qn=0):
         to_disp.sort()
         for elem in to_disp:
             with path(
-                    'q',
+                    'pm20_3.q',
                     elem
             ) as pt:
                 img = Image(filename=pt)
